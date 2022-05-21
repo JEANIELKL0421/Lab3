@@ -21,7 +21,7 @@ def test_bubble_sort_descending():
 
     assert (result == test_arr)
 
-def test_bubble_sort_re2():
+def test_bubble_sort_re3():
     result = 2
     input_arr = [1,2]
 
@@ -29,7 +29,7 @@ def test_bubble_sort_re2():
 
     assert (result == 2)
 
-def test_bubble_sort_re3():
+def test_bubble_sort_re2():
     result = 1
     input_arr = [1,2,3,4,5,6,7,8,9,0,1]
 
@@ -41,15 +41,15 @@ def test_bubble_sort_re4():
     result = 0
     input_arr = []
 
-    result = Lab3.bubble_sort(input_arr, 3)
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
 
     assert (result == 0)
 
 def test_bubble_sort_re5():
     result = 3
-    input_arr = ['algerbra']
+    input_arr = ['r']
 
-    result = Lab3.bubble_sort(input_arr, 3)
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
 
     assert (result == 3)
 

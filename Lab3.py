@@ -11,7 +11,9 @@ def bubble_sort(arr, sorting_order):
 
     # Get number of elements in the list
     n = len(arr_result)
-    if isinstance(arr,int):
+
+    if all([isinstance(arra,int) for arra in arr]):
+
 
         if n == 10:
     # Traverse through all array elements
@@ -46,11 +48,13 @@ def bubble_sort(arr, sorting_order):
 
 
 
+
+
     return arr_result
 
 def main():
     # Driver code to test above
-    arr = [1,2,3,4]
+    arr = [64, 34, 25, 12,'z']
 
     # Sort in ascending order
     result = bubble_sort(arr, SORT_ASCENDING)
@@ -61,6 +65,8 @@ def main():
     print("Sorted array in descending order: ")
     result = bubble_sort(arr, SORT_DESCENDING)
     print(result)
+    print(all([isinstance(arra, int) for arra in arr]))
+
 
 
 if __name__ == "__main__":
